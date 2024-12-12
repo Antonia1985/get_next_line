@@ -1,0 +1,3 @@
+Hello, World!
+This is a test file.
+get_next_line is working!
