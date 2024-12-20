@@ -1,6 +1,4 @@
 //cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 main.c get_next_line.c get_next_line_utils.c -o gnl
-
-
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -19,6 +17,7 @@ int main(int argc, char **argv)
             printf("Line: %s", line);
             free(line);  // Free the memory allocated for the line
         }
+        printf("\n");
     }
     else if (argc == 2) // File argument is provided
     {
@@ -36,6 +35,7 @@ int main(int argc, char **argv)
             printf("Line: %s", line);
             free(line);  // Free the memory allocated for the line
         }
+        printf("\n");
 
         // Close the file when done
         close(fd);
