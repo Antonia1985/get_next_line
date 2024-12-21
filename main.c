@@ -17,7 +17,7 @@ int main(int argc, char **argv)
             printf("Line: %s", line);
             free(line);  // Free the memory allocated for the line
         }
-        printf("\n");
+        //printf("\n");
     }
     else if (argc == 2) // File argument is provided
     {
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
             printf("Line: %s", line);
             free(line);  // Free the memory allocated for the line
         }
-        printf("\n");
+        //printf("\n");
 
         // Close the file when done
         close(fd);
